@@ -1,18 +1,17 @@
 #header {
   position: fixed;
   top: 0px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 70px;
-  width: 100vw;
+  width: 100%;
   border-bottom: 2px solid black;
-  padding: 0px 50px 0px 30px;
   background-color: rgb(117,113,128);
   color: rgb(6,32,73);
 }
 
 #header-left {
-  flex: 1;
+  padding-left: 20px;
   margin: 0px;
   display: flex;
   justify-content: flex-start;
@@ -29,6 +28,7 @@
 #header-right {
   display: flex;
   justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .header-section {
@@ -36,9 +36,9 @@
   width: 10vw;
   min-width: 50px;
   height: 50px;
+  box-sizing: border-box;
   border-left: 2px solid black;
   margin-top: 5px;
-  /* margin-right: 10px; */
   padding: 5px 15px;
   text-align: center;
   display: flex;
