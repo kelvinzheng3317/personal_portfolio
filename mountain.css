@@ -1,0 +1,353 @@
+/* general styles */
+
+html {
+    font-size: 18px;
+    font-family: 'Lato', 'sans-serif';
+    /* sunset's orange */
+    color: rgb(6,32,73);
+    /* color: rgba(6,32,73,255); */
+}
+
+body {
+    margin: 0;
+    background-color: rgb(9,34,74);
+    /* padding-bottom: 100px; */
+    padding-top: 70px;
+}
+
+a {
+    /* dark blue */
+    color: rgb(6,32,73);
+}
+
+a:hover {
+    color: rgb(13, 71, 165);
+}
+
+#header-frame {
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 2px solid black;
+  padding: 0px 30px;
+  background-color: rgb(117,113,128);
+  color: rgb(6,32,73);
+}
+
+.style-box {
+    border-left: 2px solid black;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    width: 8vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-box input {
+    width: 7vw;
+    height: 20px;
+    margin: 6px;
+}
+
+#style-button {
+    background-color: white;
+    color: rgb(6,32,73);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#page-footer {
+    background-color: rgb(6, 15, 71);
+    color: white;
+    padding: 40px 40px;
+}
+
+#page-footer a{
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#page-footer a:hover {
+    color: rgb(131, 174, 222);
+}
+
+#style-button::hover {
+    background-color: rgb(8, 42, 97);
+}
+
+.give-margin{
+    margin: 10px 4%;
+}
+
+
+/* index.html specific styles */
+
+.intro {
+    background-image: url(images/sunset_mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1130px;
+    margin: 0;
+    padding: 80px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.page-links {
+    padding: 50px;
+}
+
+.page-link-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-link-icon {
+    flex: 1;
+    height: 350px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-link-icon:hover {
+    box-shadow: 4px 4px 6px gray;
+}
+
+#page-icon-1 {
+    background-image: url("images/portfolio-img.webp");
+}
+
+#page-icon-2 {
+    background-image: url("images/skill-img.jpg");
+}
+
+#page-icon-3 {
+    background-image: url("images/about-me.jpg");
+}
+
+#page-icon-4 {
+    background-image: url("images/game-dev.png");
+}
+
+
+/* portfolio css */
+
+.portfolio-intro {
+    margin: 20px 85px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.portfolio-intro h1 {
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(6,32,73,255);
+}
+
+#all-projects a {
+    text-decoration: none;
+}
+
+.project {
+    margin: 30px 100px;
+    height: 200px;
+    padding: 0px 6%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, orange, purple);
+    transition: background 0.2s;
+    color: rgba(6,32,73,255);
+
+    border: 1px solid black;
+}
+
+.project-descr {
+    flex: 1;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+.project img {
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+
+/* skills css */
+
+.skill-contents {
+    background-color: rgba(117, 113, 128, 0.838);
+    color:rgb(6,32,73);
+    padding: 20px 0px;
+    margin-bottom: 0px;
+}
+
+.skill-intro {
+    font-weight: bold;
+    border-bottom: 5px solid;
+}
+
+.skill-header {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.all-skills {
+    background-color: white;
+    padding: 25px;
+    border-radius: 40px;
+}
+
+.skills {
+    font-size: 30px;
+    color: rgb(6,32,73);
+    margin-bottom: 20px;
+}
+
+.languages, .technologies {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.skills img {
+    min-width: 80px;
+    max-width: 200px;
+    min-height: 80px;
+    max-height: 90px;
+    background-size: cover;
+}
+
+
+.skill-img-container {
+    margin-left: 20px;
+}
+
+.interest-area {
+    margin: 70px 0px;
+    color: rgb(218, 218, 218);
+    font-size: 24px;
+}
+
+.resume {
+    padding: 8px 40px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(6,32,73);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.resume:hover {
+    box-shadow: 4px 4px 16px rgb(28, 0, 53);
+}
+
+.resume img {
+    width: 120px;
+}
+
+.projects-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 94, 126, 0.891);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.projects-link img {
+    margin-top: 36px;
+    height: 300px;
+}
+
+
+/* more css */
+
+#more-page-contents {
+    background-color: rgba(117, 113, 128, 0.838);;
+    color: rgb(6,32,73);
+    padding-top: 2px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#more-about-me-header {
+    border-bottom: 2px solid white;
+}
+
+#hobby-header {
+    text-decoration: underline;
+    font-size: 40px;
+    margin-left: 2vw;
+}
+
+.hobby {
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 90vw;
+    height: auto;
+    border-radius: 40px;
+    margin: 2vh 1vw;
+}
+
+.hobby-descr {
+    padding: 0vh 3vw;
+    font-size: 20px;
+}
+
+.hobby img {
+    height: 25vh;
+    margin: 0vh 3vw;
+}
+
+.extracurriculars {
+    background-color: rgb(15, 56, 123);
+    color: white;
+    margin-bottom: 0px;
+    padding: 40px;
+}
+
