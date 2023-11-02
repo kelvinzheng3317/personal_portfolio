@@ -33,7 +33,7 @@ a:hover {
   border-bottom: 2px solid black;
 } */
 
-#header {
+.header {
   position: fixed;
   top: 0px;
   display: grid;
@@ -45,7 +45,7 @@ a:hover {
   color: rgb(6,32,73);
 }
 
-#header-left {
+.header-left {
   padding-left: 20px;
   margin: 0px;
   display: flex;
@@ -55,12 +55,12 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  #header-left {
+  .header-left {
       font-size: 1.5rem;
   }
 }
 
-#header-right {
+.header-right {
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
