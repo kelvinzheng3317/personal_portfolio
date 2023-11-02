@@ -4,100 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
     <link id="mainStyleSheet" rel="stylesheet" href="mountain.css">
     <title>Portfolio</title>
 </head>
 <body>
-  <iframe id="header-frame" src="header.html" title="header" frameborder="0" scrolling="no"></iframe>
-
-    <div class="portfolio-intro">
-        <h1>What I've made so far...</h1>
-        <img src="images/working_on_laptop.jpeg">
+  <!-- <iframe id="header-frame" src="header.html" title="header" frameborder="0" scrolling="no"></iframe> -->
+  <div id="header">
+    <div id="header-left">
+      Kelvin Zheng
     </div>
-    <div id="all-projects">
-        <!-- Think of if there are more/BETTER projects to add -->
-        <a href="https://github.com/kelvinzheng3317/Wordle" target="_blank">                    
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">Wordle</p>
-                    <p>
-                        Recreated the popular word web game Wordle using pure HTML, CSS, and Javascirpt. Includes a useable on screen keyboard.
-                    </p>
-                </div>
-                <img src="images/wordle.jpg">
-            </div>
-        </a>
-
-        <a href="https://github.com/kelvinzheng3317/2048_webgame" target="_blank">
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">2048</p>
-                    <p>
-                        Recreated the popular word web game 2048 using pure HTML, CSS, and Javascript. Fully playable and keeps track of 
-                        high score. Utilizes local storage to maintain high-score even after refresing page.
-                    </p>
-                </div>
-                <img src="images/2048.jpg">
-            </div>
-        </a>
-
-        <a href="">
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">Weather Data Analyzer</p>
-                    <p>
-                        Takes in weather data from an outside file, performs calculations and outputs results visually through graphs.
-                        The program also allows the user to enter a month and year to see the statistics for that month. 
-                        Uses Python as well as numpy and matplotlib modules.
-                    </p>
-                </div>
-                <img src="images/weather-icon.png">
-            </div>
-        </a>
-        
-        <a href="https://github.com/kelvinzheng3317/etch-a-sketch" target="_blank">
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">Etch-a-sketch</p>
-                    <p>
-                        Created a web version of Etch-a-sketch using HTML, CSS, and Javascirpt. 
-                        Includes the ability to choose brush color, brush size, change grid units, and reset drawing.
-                    </p>
-                </div>
-                <img src="images/etch-a-sketch.jpg">
-            </div>
-        </a>
-
-        <a href="">
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">Tic-tac-toe game</p>
-                    <p>
-                        Tic-tac-toe game built using Python. User can play against a second player or against a bot.
-                        Uses object oriented programming.
-                    </p>
-                </div>
-                <img src="images/tic-tac-toe-icon.png">
-            </div>
-        </a>
-        
-        <a href="https://github.com/kelvinzheng3317/sudoku-solver/tree/master" target="_blank">
-            <div class="project">
-                <div class="project-descr">
-                    <p class="project-title">Sudoku solver</p>
-                    <p>
-                        A recursive algorithm that can solve any Sudoku puzzles. Build using C++.
-                    </p>
-                </div>
-                <img src="images/sudoku.png">
-            </div>
-        </a>
+    <div id="header-right">
+      <a href="index.html" target="_parent">
+        <div class="header-section">Home</div>
+      </a>
+      <a href="portfolio.html" target="_parent">
+        <div class="header-section">Portfolio</div>
+      </a>
+      <a href="skills.html" target="_parent">
+        <div class="header-section">Skills</div>
+      </a>
+      <!-- <div class="style-box">
+          <button id="style-button" type="button">Style</button>
+      </div> -->
     </div>
+  </div>
 
-    <footer id="page-footer">
-        <div>Contact me @: <a href="mailto:kelvinzheng21@gmail.com">kelvinzheng21@gmail.com</a></div>
-        <div>Github: <a href="https://github.com/kelvinzheng3317" target="_blank">https://github.com/kelvinzheng3317</a></div>
-        <div>Linkedin: <a href="https://www.linkedin.com/in/kelvin-zheng-b7a60824b/" target="_blank">https://www.linkedin.com/in/kelvin-zheng-b7a60824b/</a></div>
-    </footer>
+  <div class="portfolio-intro">
+      <h1>What I've made so far...</h1>
+      <img src="images/working_on_laptop.jpeg">
+  </div>
+  <div id="all-projects">
+      <!-- Think of if there are more/BETTER projects to add -->
+      <a href="https://github.com/kelvinzheng3317/Wordle" target="_blank">                    
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">Wordle</p>
+                  <p>
+                      Recreated the popular word web game Wordle using pure HTML, CSS, and Javascirpt. Includes a useable on screen keyboard.
+                  </p>
+              </div>
+              <img src="images/wordle.jpg">
+          </div>
+      </a>
+
+      <a href="https://github.com/kelvinzheng3317/2048_webgame" target="_blank">
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">2048</p>
+                  <p>
+                      Recreated the popular word web game 2048 using pure HTML, CSS, and Javascript. Fully playable and keeps track of 
+                      high score. Utilizes local storage to maintain high-score even after refresing page.
+                  </p>
+              </div>
+              <img src="images/2048.jpg">
+          </div>
+      </a>
+
+      <a href="">
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">Weather Data Analyzer</p>
+                  <p>
+                      Takes in weather data from an outside file, performs calculations and outputs results visually through graphs.
+                      The program also allows the user to enter a month and year to see the statistics for that month. 
+                      Uses Python as well as numpy and matplotlib modules.
+                  </p>
+              </div>
+              <img src="images/weather-icon.png">
+          </div>
+      </a>
+      
+      <a href="https://github.com/kelvinzheng3317/etch-a-sketch" target="_blank">
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">Etch-a-sketch</p>
+                  <p>
+                      Created a web version of Etch-a-sketch using HTML, CSS, and Javascirpt. 
+                      Includes the ability to choose brush color, brush size, change grid units, and reset drawing.
+                  </p>
+              </div>
+              <img src="images/etch-a-sketch.jpg">
+          </div>
+      </a>
+
+      <a href="">
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">Tic-tac-toe game</p>
+                  <p>
+                      Tic-tac-toe game built using Python. User can play against a second player or against a bot.
+                      Uses object oriented programming.
+                  </p>
+              </div>
+              <img src="images/tic-tac-toe-icon.png">
+          </div>
+      </a>
+      
+      <a href="https://github.com/kelvinzheng3317/sudoku-solver/tree/master" target="_blank">
+          <div class="project">
+              <div class="project-descr">
+                  <p class="project-title">Sudoku solver</p>
+                  <p>
+                      A recursive algorithm that can solve any Sudoku puzzles. Build using C++.
+                  </p>
+              </div>
+              <img src="images/sudoku.png">
+          </div>
+      </a>
+  </div>
+
+  <footer id="page-footer">
+      <div>Contact me @: <a href="mailto:kelvinzheng21@gmail.com">kelvinzheng21@gmail.com</a></div>
+      <div>Github: <a href="https://github.com/kelvinzheng3317" target="_blank">https://github.com/kelvinzheng3317</a></div>
+      <div>Linkedin: <a href="https://www.linkedin.com/in/kelvin-zheng-b7a60824b/" target="_blank">https://www.linkedin.com/in/kelvin-zheng-b7a60824b/</a></div>
+  </footer>
 </body>
 </html>
