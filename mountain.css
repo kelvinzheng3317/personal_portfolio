@@ -24,12 +24,61 @@ a:hover {
     color: rgb(13, 71, 165);
 }
 
-#header-frame {
+/* COMMENTED OUT BC PEOPLE.TAMU DON'T SUPPORT IFRAME */
+/* #header-frame {
   width: 100vw;
   position: fixed;
   top: 0px;
   height: 70px;
   border-bottom: 2px solid black;
+} */
+
+.header {
+  position: fixed;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 70px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  background-color: rgb(117,113,128);
+  color: rgb(6,32,73);
+}
+
+.header-left {
+  padding-left: 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-left {
+      font-size: 1.5rem;
+  }
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.header-section {
+  max-width: 150px;
+  width: 15vw;
+  min-width: 80px;
+  height: 50px;
+  box-sizing: border-box;
+  border-left: 2px solid black;
+  margin-top: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .style-box {
@@ -100,6 +149,12 @@ a:hover {
     text-align: center;
 }
 
+@media  (max-width: 600px) {
+  .intro {
+    padding: 60px 40px;
+  }
+}
+
 .page-links {
     padding: 50px;
 }
@@ -114,7 +169,7 @@ a:hover {
     flex: 1;
     height: 350px;
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
     padding-top: 100px;
