@@ -287,16 +287,23 @@ a:hover {
 }
 
 .languages, .technologies {
-    display: flex;
+    /* display: flex;
     justify-content:flex-start;
-    align-items: center;
+    align-items: center; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .skills img {
-    min-width: 80px;
+    /* min-width: 80px;
     max-width: 200px;
     min-height: 80px;
     max-height: 90px;
+    flex-basis: 100%;
+    */
+    width: 80%;
+    height: auto;
     background-size: cover;
 }
 
@@ -308,7 +315,7 @@ a:hover {
 .interest-area {
     margin: 70px 0px;
     color: rgb(218, 218, 218);
-    font-size: 1.0rem;
+    font-size: 1.25rem;
 }
 
 .resume {
@@ -354,6 +361,7 @@ a:hover {
 .extracurriculars {
     background-color: rgb(15, 56, 123);
     color: white;
+    font-size: 1.25rem;
     margin-bottom: 0px;
     padding: 40px;
 }
