@@ -1,0 +1,434 @@
+body {
+    background-color: rgb(56,128,199);
+    color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding-top: 71px;
+}
+
+a {
+    /* dark blue */
+    color: rgb(6,32,73);
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited {
+    color: rgb(6,32,73);
+}
+
+/* header css */
+.header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid rgb(13, 71, 165);;
+    padding: 0px 30px;
+    background-color: rgb(56,128,199);
+    color: rgb(13, 71, 165);
+}
+
+.header-left {
+    flex: 1;
+}
+
+@media screen and (max-width: 1240px) {
+    .header h1 {
+        font-size: 20px;
+    }
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-section {
+    max-width: 200px;
+    width: 6vw;
+    height: 50px;
+    /* border-left: 2px solid rgb(13, 71, 165); */
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.style-box {
+    /* border-left: 2px solid rgb(13, 71, 165); */
+    margin-right: 80px;
+    margin-top: 5px;
+    padding: 5px 5px;
+    width: 5vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-box input {
+    width: 7vw;
+    height: 20px;
+    margin: 6px;
+}
+
+#style-button {
+    background-color: white;
+    color: rgb(6,32,73);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#page-footer {
+    background-color: rgb(220, 143, 34);
+    color: white;
+    padding: 40px 40px;
+}
+
+#page-footer a{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#page-footer a:hover {
+    color: black;
+}
+
+
+/* index css */
+.home-contents {
+    display: flex;
+    background-color: rgb(105, 175, 119) ;
+}
+
+.intro {
+    background-image: url("images/me-pic1.jpg");
+    background-size: cover;
+    padding: 50px 120px;
+}
+
+.page-links {
+    width: 50vw;
+    padding: 50px;
+    /* background-color: rgb(105, 175, 118); */
+    background: linear-gradient(180deg, rgb(59, 131, 203), rgb(235, 217, 182), rgb(131, 117, 83));
+}
+
+.page-link-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-link-icon {
+    flex: 1;
+    height: auto;
+    width: 45vw;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.page-link-icon:hover {
+    box-shadow: 4px 6px 14px gray;
+}
+
+#page-icon-1 {
+    background-image: url("images/portfolio-img.webp");
+}
+
+#page-icon-2 {
+    background-image: url("images/skill-img.jpg");
+}
+
+#page-icon-3 {
+    background-image: url("images/about-me.jpg");
+}
+
+#page-icon-4 {
+    background-image: url("images/game-dev.png");
+}
+
+
+/* portfolio css */
+
+.portfolio-intro {
+    margin: 20px 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 120px;
+}
+
+.portfolio-intro h1 {
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(6,32,73,255);
+    font-weight: bold;
+    font-size: 50px;
+}
+.portfolio-intro img {
+    height: 200px;
+}
+
+#all-projects {
+    margin: 10px 85px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#all-projects a {
+    text-decoration: none;
+}
+
+.project {    
+    padding: 10px 6%;
+    margin: 20px 20px;
+    width: 35vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(75, 168, 75), rgb(221, 168, 71));
+    transition: background 0.2s;
+    color: rgba(6,32,73);
+    text-decoration: none;
+
+    /* border: 1px solid black; */
+}
+
+.project:hover {
+    box-shadow: 4px 4px 16px white;
+}
+
+.project-descr {
+    flex: 1;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 10px 0px;
+}
+
+.project img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* skills css */
+
+.skill-contents {
+    /* background: linear-gradient(180deg, rgb(56,128,199), rgb(255, 81, 0)); */
+    background-image: url("images/5390903-fall-autumn-tree-sky-season-foliage-cloud-blue-sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    padding: 10px 50px;
+    margin-bottom: 0px;
+}
+
+.skill-intro {
+    font-weight: bold;
+    border-bottom: 5px solid;
+}
+
+.skill-header {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+.all-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    border-radius: 40px;
+}
+
+.skills {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.528);
+    color: rgb(6,32,73);
+    margin: 10px 40px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.languages, .technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    width: 6vw;
+    height: auto;
+    background-size: cover;
+    margin: 0.5vw;
+}
+
+
+.skill-img-container {
+    margin-left: 20px;
+}
+
+.interest-area {
+    background-color: rgba(255, 255, 255, 0.528);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.resume {
+    padding: 2px 20px;
+    margin: 60px 40px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(6,32,73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume img {
+    width: 100px;
+}
+
+.projects-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 190);
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.projects-link img {
+    margin-top: 25px;
+    height: 300px;
+}
+
+/* more css */
+
+#more-page-contents {
+    background-image: url(images/fall-tree-leaves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#more-about-me-header {
+    border-bottom: 2px solid white;
+    margin: 0px 80px;
+    font-size: 48px;
+}
+
+#hobby-header {
+    text-decoration: underline;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0vw 2vw;
+}
+
+.hobby {
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+    margin: 1vh 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbies {
+        grid-template-columns: 1fr 1fr;
+        margin: 0vw 1vw;
+    }
+    
+    .hobby {
+        width: 45vw;
+        margin: 1vh 0.5vw;
+    }
+}
+
+.hobby-descr {
+    color: black;
+    font-size: 22px;
+    padding: 0px 40px;
+    margin-top: 8px;
+}
+
+.hobby img {
+    margin: 0px 0px;
+    max-width: 90%;
+    max-height: 50%;
+}
+
+.extracurriculars {
+    background-color: rgb(255, 217, 90);
+    color: brown;
+    margin-bottom: 0px;
+    padding: 40px 60px;
+}
+
+
