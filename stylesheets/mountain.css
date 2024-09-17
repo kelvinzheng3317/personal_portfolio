@@ -136,7 +136,7 @@ a:hover {
 /* index.html specific styles */
 
 .intro {
-    background-image: url(images/sunset_mountain.jpg);
+    background-image: url(../images/sunset_mountain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 1130px;
@@ -157,9 +157,9 @@ a:hover {
 
 .page-links {
     padding: 50px;
-}
-
-.page-link-row {
+  }
+  
+  .page-link-row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,6 @@ a:hover {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
     padding-top: 100px;
     margin: 10px;
     background-repeat: no-repeat;
@@ -182,20 +181,24 @@ a:hover {
     box-shadow: 4px 4px 6px gray;
 }
 
+mark {
+  background-color: rgba(204, 204, 204, 0.7);
+}
+
 #page-icon-1 {
-    background-image: url("images/portfolio-img.webp");
+    background-image: url("../images/portfolio-img.webp");
 }
 
 #page-icon-2 {
-    background-image: url("images/skill-img.jpg");
+    background-image: url("../images/skill-img.jpg");
 }
 
 #page-icon-3 {
-    background-image: url("images/about-me.jpg");
+    background-image: url("../images/about-me.jpg");
 }
 
 #page-icon-4 {
-    background-image: url("images/game-dev.png");
+    background-image: url("../images/game-dev.png");
 }
 
 
